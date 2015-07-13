@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+    Register New User
+</h1>
+
+<form role="form" method="POST">
+    <div class="form-group">
+        <label for="title">Name</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username please" required>
+    </div>
+    <div class="form-group">
+        <label for="content">Content</label>
+        <textarea class="form-control" id="emailaddr" name="emailaddr" placeholder="Email Address Please" required></textarea>
+    </div>
+  <div class="form-group">
+        <label for="title">Password</label>
+        <input type="text" class="form-control" id="password1" name="password1" placeholder="Password please" required>
+    </div>
+  <div class="form-group">
+        <label for="title">Password Again</label>
+        <input type="text" class="form-control" id="password2" name="password2" placeholder="Retype Password" required>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{% endblock %}

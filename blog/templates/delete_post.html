@@ -1,0 +1,21 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="row">
+      <div class="col-md-2 text-right metadata">
+      </div>
+      <div class="col-md-10">
+          <ul class="list-unstyled">
+                      <li>
+                          Are you sure you want to delete?
+                      </li>
+                      <li>
+                        <a href="/post/{{posts.id}}/delete_confirm">Yes</a> <a href="/post/{{posts.id}}">Cancel</a>
+                      </li>
+           </ul> 
+       </div>
+</div>
+{{ macros.render_post(posts) }}
+{% endblock %}
